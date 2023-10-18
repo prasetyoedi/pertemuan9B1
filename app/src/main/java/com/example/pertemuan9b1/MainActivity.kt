@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var viewPager2 : ViewPager2
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        title = "Dashboard"
+        supportActionBar?.hide()
         var binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
